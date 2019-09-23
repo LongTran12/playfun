@@ -9,14 +9,15 @@ import 'antd/dist/antd.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 import './assets/css/style.scss';
+import { SiteContext } from './contexts/SiteContext'
 
 function Wrap() {
     return (
-        <>
+        <SiteContext>
             <Header />
             <App />
             <Footer />
-        </>
+        </SiteContext>
     );
 }
 

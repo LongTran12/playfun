@@ -1,16 +1,18 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import { Row, Col } from 'antd'
 import styled from 'styled-components'
 import logo from '../assets/images/logo.png'
 import langUs from '../assets/images/lang-us.png'
 import langVn from '../assets/images/lang-vn.png'
+import { MyContext } from '../contexts/SiteContext'
 
 export default function Header() {
-    const [isOpen, setisOpen] = useState(false)
+    const [isOpen, setisOpen] = useState(false);
+    const { lang, setlang, getLang } = useContext(MyContext);
     return (
         <Wrap>
             <Row>
-                <Col xxl={{ span: 18, offset: 3 }} xl={{ span: 18, offset: 3 }}>
+                <Col xxl={{ span: 16, offset: 4 }} xl={{ span: 16, offset: 4 }}>
                     <Row type='flex' justify='space-between' align='middle'>
                         <Col xxl={{ span: 4, offset: 0 }} >
                             <img src={logo} alt="logo" width="100%" />
@@ -20,18 +22,18 @@ export default function Header() {
                             <div className="tab-right-header d-flex justify-content-end">
                                 <div className="language">
                                     <button onClick={() => setisOpen(!isOpen)}>
-                                        <img src={langUs} alt="us" width={20} height={20} />
-                                        English
-                                        </button>
+                                        <img src={lang === "vi" ? langVn : langUs} alt="us" width={20} height={20} />
+                                        {lang === 'vi' ? 'Vietnamese' : 'English'}
+                                    </button>
                                     <ul>
                                         <li>
-                                            <button>
+                                            <button onClick={() => setlang('en')}>
                                                 <img src={langUs} alt="us" width={20} height={20} />
                                                 English
                                             </button>
                                         </li>
                                         <li>
-                                            <button>
+                                            <button onClick={() => setlang('vi')}>
                                                 <img src={langVn} alt="us" width={20} height={20} />
                                                 VietNam
                                             </button>
@@ -46,9 +48,9 @@ export default function Header() {
                         <Row>
                             <Col>
                                 <ul>
-                                    <li>Home</li>
-                                    <li>Invest</li>
-                                    <li>Trade</li>
+                                    <li><a href="#1">{getLang('Home')}</a></li>
+                                    <li><a href="#2">Invest</a></li>
+                                    <li><a href="#3">Trade</a></li>
                                 </ul>
                             </Col>
                         </Row>
@@ -81,7 +83,7 @@ const Wrap = styled.div`
             }
             ul{
                 position:absolute;
-                top:40px;
+                top:35px;
                 right:0;
                 padding:0;
                 border-radius:5px;
@@ -95,9 +97,13 @@ const Wrap = styled.div`
                 border-top: 5px solid #0a0a27;
                 box-shadow: 0 6px 19px #0a0a27;
                 background-color: #1f1f46;
-                z-index:99;
+                z-index:999;
+                
                 li{
                     padding:7px;
+                    :hover{
+                        opacity:0.5;
+                    }
                     button{
                         border:0;
                         background:transparent;
@@ -122,8 +128,17 @@ const Wrap = styled.div`
             display:flex;
             align-items:center;
             list-style:none;
+            margin-top:40px;
+            padding-left:0;
             li{
-                padding:5px 15px;
+                padding:5px 30px 5px 0;
+                a{
+                    color:#fff;
+                    font-size:16px;
+                    :hover{
+                        text-decoration:none;
+                    }
+                }
             }
         }
     }
