@@ -43,7 +43,7 @@ export default function SectionGame() {
                     xs={{ span: 22, offset: 1 }}
                     className="text-center"
                 >
-                    <BlockHeading title={getLang('Game')} bold="true" />
+                    <BlockHeading title={getLang('Game')} />
                     <Row gutter={40} type="flex" justify="center">
                         {data.map((index, i) =>
                             <Col xxl={8} xl={8} lg={12} md={12} sm={12} xs={24} key={i}>

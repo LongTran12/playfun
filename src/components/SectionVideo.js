@@ -112,9 +112,10 @@ const Wrap = styled.div`
     }
     .back-gradient{
         position: relative;
+        padding-bottom:1px;
         img{
             position: absolute;
-            bottom:-1px;
+            bottom:0px;
             left:50%;
             transform:translateX(-50%);
         }
