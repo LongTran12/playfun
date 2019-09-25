@@ -26,7 +26,7 @@ const Wrap = styled.div`
     background-size: 100% 100%;
     text-align: center;
     margin-bottom: 40px;
-    z-index: 2213;
+    z-index: 5;
     img{
         position:absolute;
         top:0;

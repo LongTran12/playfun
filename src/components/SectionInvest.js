@@ -35,10 +35,18 @@ export default function SectionInvest() {
     return (
         <Wrap>
             <Row>
-                <Col xxl={{ span: 16, offset: 4 }} xl={{ span: 16, offset: 4 }} lg={{ span: 22, offset: 1 }} md={{ span: 22, offset: 1 }} sm={{ span: 22, offset: 1 }} xs={{ span: 22, offset: 1 }} className="text-center">
-                    <img src={imgBackgr} alt="" />
+                <Col
+                    xxl={{ span: 16, offset: 4 }}
+                    xl={{ span: 22, offset: 1 }}
+                    lg={{ span: 22, offset: 1 }}
+                    md={{ span: 22, offset: 1 }}
+                    sm={{ span: 22, offset: 1 }}
+                    xs={{ span: 22, offset: 1 }}
+                    className="text-center"
+                >
+                    <img className="imback" src={imgBackgr} alt="" />
                     <BlockHeading title={getLang('Invest')} bold="true" />
-                    <Row gutter={40}>
+                    <Row gutter={40} type="flex" justify="center">
                         {data.map((index, i) =>
                             <Col xxl={8} xl={8} lg={12} md={12} sm={12} xs={24} key={i}>
                                 <BlockInvest {...index} />
@@ -54,4 +62,10 @@ export default function SectionInvest() {
 }
 const Wrap = styled.div`
     background-color: #0a0a28;
+    overflow:hidden;
+    @media (max-width:768px){
+        .imback{
+            width:100%;
+        }
+    }
 `;

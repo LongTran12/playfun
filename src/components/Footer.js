@@ -11,12 +11,22 @@ function Footer() {
     return (
         <Wrap >
             <Row>
-                <Col xxl={{ span: 16, offset: 4 }} xl={{ span: 16, offset: 3 }} lg={{ span: 22, offset: 1 }} md={{ span: 22, offset: 1 }} sm={{ span: 22, offset: 1 }} xs={{ span: 22, offset: 1 }}>
-                    <Row className="row-footer">
-                        <Col xxl={4} xl={4} lg={4} md={24} sm={24} xs={24}>
+                <Col
+                    xxl={{ span: 16, offset: 4 }}
+                    xl={{ span: 22, offset: 1 }}
+                    lg={{ span: 22, offset: 1 }}
+                    md={{ span: 22, offset: 1 }}
+                    sm={{ span: 22, offset: 1 }}
+                    xs={{ span: 22, offset: 1 }}
+                >
+                    <Row className="row-footer" type="flex" justify="center" align="middle">
+                        <Col xxl={4} xl={4} lg={4} md={4} sm={4} xs={6}>
                             <img src={logo} alt="" width="100%" />
                         </Col>
-                        <Col xxl={{ span: 10, offset: 10 }} xl={{ span: 10, offset: 10 }} lg={8} md={24} sm={24} xs={24}>
+                        <Col xxl={{ span: 11, offset: 9 }}
+                            xl={{ span: 11, offset: 9 }}
+                            lg={{ span: 13, offset: 7 }}
+                            md={24} sm={24} xs={24}>
                             <div className="social">
                                 <ul>
                                     <li><a href="#1"><FaYoutube /></a></li>
@@ -43,6 +53,8 @@ function Footer() {
 const Wrap = styled.div`
     background-color: #0a0a28;
     color:#777;
+    overflow:hidden;
+    padding-bottom:15px;
     .row-footer{
         padding:40px 0;
         display:flex;
@@ -56,13 +68,32 @@ const Wrap = styled.div`
                 list-style:none;
                 display:flex;
                 justify-content:flex-end;
+                flex-flow:row wrap;
+                padding-left:0;
                 li{
                     padding:0 25px;
+                    margin-bottom:5px;
                     a{
                         svg{
                             font-size:28px;
                             color:#777;
                         }
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width:767px){
+        
+        .row-footer{
+            margin-bottom:20px;
+            .social{
+                margin-top:40px;
+                ul{
+                    justify-content:center;
+                    padding-left:0;
+                    li{
+                        margin-bottom:30px;
                     }
                 }
             }

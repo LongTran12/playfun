@@ -16,4 +16,6 @@ export default {
     'Grid Trading': 'Grid Trading',
     'Coin Exchange': 'Coin Exchange',
     'Trade': 'Trade',
+    'Investment Institutions': 'Investment Institutions',
+    'Has received millions of dollars in investment': 'Has received millions of dollars in investment',
 }

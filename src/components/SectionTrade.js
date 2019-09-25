@@ -15,7 +15,7 @@ export default function SectionGame() {
             id: 1,
             title: getLang('Grid Trading'),
             image: img1,
-            hot: true
+            hot: true,
         },
         {
             id: 1,
@@ -34,9 +34,17 @@ export default function SectionGame() {
     return (
         <Wrap>
             <Row>
-                <Col xxl={{ span: 16, offset: 4 }} xl={{ span: 16, offset: 4 }} lg={{ span: 22, offset: 1 }} md={{ span: 22, offset: 1 }} sm={{ span: 22, offset: 1 }} xs={{ span: 22, offset: 1 }} className="text-center">
+                <Col
+                    xxl={{ span: 16, offset: 4 }}
+                    xl={{ span: 22, offset: 1 }}
+                    lg={{ span: 22, offset: 1 }}
+                    md={{ span: 22, offset: 1 }}
+                    sm={{ span: 22, offset: 1 }}
+                    xs={{ span: 22, offset: 1 }}
+                    className="text-center"
+                >
                     <BlockHeading title={getLang('Trade')} bold="true" />
-                    <Row gutter={40}>
+                    <Row gutter={40} type="flex" justify="center">
                         {data.map((index, i) =>
                             <Col xxl={8} xl={8} lg={12} md={12} sm={12} xs={24} key={i}>
                                 <BlockInvest {...index} />
@@ -51,6 +59,7 @@ export default function SectionGame() {
     )
 }
 const Wrap = styled.div`
-    background-color: #0a0a28;
-    padding:100px 0;
+   background-color:#0e0e30;
+    padding:100px 0 0;
+    overflow:hidden;
 `;

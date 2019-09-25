@@ -5,6 +5,7 @@ import logo from '../assets/images/logo.png'
 import langUs from '../assets/images/lang-us.png'
 import langVn from '../assets/images/lang-vn.png'
 import { MyContext } from '../contexts/SiteContext'
+import { NavLink } from 'react-router-dom'
 
 export default function Header() {
     const [isOpen, setisOpen] = useState(false);
@@ -12,13 +13,33 @@ export default function Header() {
     return (
         <Wrap>
             <Row>
-                <Col xxl={{ span: 16, offset: 4 }} xl={{ span: 16, offset: 4 }}>
+                <Col xxl={{ span: 16, offset: 4 }}
+                    xl={{ span: 20, offset: 2 }}
+                    lg={{ span: 22, offset: 1 }}
+                    md={{ span: 22, offset: 1 }}
+                    sm={{ span: 22, offset: 1 }}
+                    xs={{ span: 22, offset: 1 }}
+                >
                     <Row type='flex' justify='space-between' align='middle'>
-                        <Col xxl={{ span: 4, offset: 0 }} >
+                        <Col
+                            xxl={{ span: 4, offset: 0 }}
+                            xl={{ span: 4, offset: 0 }}
+                            lg={{ span: 4, offset: 0 }}
+                            md={{ span: 4, offset: 0 }}
+                            sm={{ span: 4, offset: 0 }}
+                            xs={{ span: 6, offset: 0 }}
+                        >
                             <img src={logo} alt="logo" width="100%" />
                         </Col>
 
-                        <Col xxl={{ span: 8, offset: 12 }} >
+                        <Col
+                            xxl={{ span: 8, offset: 12 }}
+                            xl={{ span: 8, offset: 12 }}
+                            lg={{ span: 8, offset: 12 }}
+                            md={{ span: 8, offset: 12 }}
+                            sm={{ span: 8, offset: 12 }}
+                            xs={{ span: 8, offset: 10 }}
+                        >
                             <div className="tab-right-header d-flex justify-content-end">
                                 <div className="language">
                                     <button onClick={() => setisOpen(!isOpen)}>
@@ -48,8 +69,8 @@ export default function Header() {
                         <Row>
                             <Col>
                                 <ul>
-                                    <li><a href="#1">{getLang('Home')}</a></li>
-                                    <li><a href="#2">Invest</a></li>
+                                    <li><NavLink activeClassName="active" to="/">{getLang('Home')}</NavLink></li>
+                                    <li><NavLink activeClassName="active" to="/pa">Invest</NavLink></li>
                                     <li><a href="#3">Trade</a></li>
                                 </ul>
                             </Col>
@@ -61,7 +82,7 @@ export default function Header() {
     )
 }
 const Wrap = styled.div`
-    padding:50px 0;
+    padding:50px 0 0;
     overflow:hidden;
     background:#0a0a27;
     .tab-right-header{
@@ -130,13 +151,43 @@ const Wrap = styled.div`
             list-style:none;
             margin-top:40px;
             padding-left:0;
+            margin-bottom:6px;
             li{
-                padding:5px 30px 5px 0;
+                padding:5px 40px 5px 0;
                 a{
                     color:#fff;
                     font-size:16px;
+                    position: relative;
+                    padding-bottom:10px;
+                    color:#777;
+                    :before{
+                        content:'';
+                        width: 100%;
+                        height:2px;
+                        background-color:#fff;
+                        top:100%;
+                        left:0;
+                        right:0;
+                        position: absolute;
+                        transform-origin:bottom right;
+                        transform:scale(0);
+                        transition:transform 0.5s ease;
+                    }
                     :hover{
                         text-decoration:none;
+                        color:#fff;
+                        :before{
+                            transform:scale(1);
+                            transform-origin:bottom left;
+                        }
+                    }
+                   
+                    &.active{
+                        color:#fff;
+                        :before{
+                            transform-origin:bottom left;
+                            transform:scale(1);
+                        }
                     }
                 }
             }

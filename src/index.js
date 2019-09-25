@@ -10,13 +10,21 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 import './assets/css/style.scss';
 import { SiteContext } from './contexts/SiteContext'
+import SectionBrand from './components/SectionBrand'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
+import SectionGame from './components/SectionGame'
 
 function Wrap() {
     return (
         <SiteContext>
-            <Header />
-            <App />
-            <Footer />
+            <Router>
+                <Header />
+                <Route exact path="/" component={App} />
+                <Route exact path="/pa" component={SectionGame} />
+                <SectionBrand />
+                <Footer />
+
+            </Router>
         </SiteContext>
     );
 }
