@@ -2,11 +2,11 @@ import React, { useContext } from 'react'
 import styled from 'styled-components'
 import imgBack from '../assets/images/backgr-brand.png'
 import { MyContext } from '../contexts/SiteContext'
-import img1 from '../assets/images/brand-1.png'
-import img2 from '../assets/images/brand-2.png'
-import img3 from '../assets/images/brand-3.png'
 import img4 from '../assets/images/brand-4.png'
 import img5 from '../assets/images/brand-5.png'
+import img6 from '../assets/images/brand1.png'
+import img7 from '../assets/images/brand2.png'
+import img8 from '../assets/images/brand3.png'
 import { Row, Col } from 'antd'
 import line from '../assets/images/news_line.png'
 
@@ -30,7 +30,9 @@ export default function SectionBrand() {
                     <div className="body-brand">
                         {dataBrand.map((index, i) =>
                             <p key={i}>
-                                <a href={index.href}><img src={index.img} alt={index.brand} /></a>
+                                <a href={index.href}>
+                                    <img src={index.img} alt={index.brand} width="250px" />
+                                </a>
                             </p>
                         )}
                     </div>
@@ -43,19 +45,19 @@ export default function SectionBrand() {
 const dataBrand = [
     {
         id: 0,
-        img: img1,
+        img: img6,
         brand: 'holdeb asset',
         href: "#1"
     },
     {
         id: 1,
-        img: img2,
+        img: img7,
         brand: 'philippine suntown',
         href: '#1'
     },
     {
         id: 2,
-        img: img3,
+        img: img8,
         brand: 'pearl ventures',
         href: "#2"
     },
@@ -113,7 +115,7 @@ const Wrap = styled.div`
             margin:0 40px 35px;
             a{
                 img{
-                    height:36px;
+                    /* height:36px; */
                 }
             }
         }

@@ -3,9 +3,9 @@ import { Row, Col } from 'antd'
 import styled from 'styled-components'
 import BlockHeading from './BlockHeading'
 import { MyContext } from '../contexts/SiteContext'
-import img1 from '../assets/images/game-1.png'
-import img2 from '../assets/images/game-2.png'
-import img3 from '../assets/images/game-3.png'
+import img1 from '../assets/images/erc20buster.png'
+import img2 from '../assets/images/tronbuster.png'
+import img3 from '../assets/images/lottery.png'
 import BlockInvest from './BlockInvest'
 
 export default function SectionGame() {
@@ -13,20 +13,20 @@ export default function SectionGame() {
     const data = [
         {
             id: 1,
-            title: getLang('Lottery'),
+            title: getLang('Number Lucky ERC20BUSTER'),
             image: img1,
             hot: true
         },
         {
             id: 1,
-            title: getLang('Dice'),
+            title: getLang('Number Lucky Tronbuster'),
             image: img2,
             coming: true
 
         },
         {
             id: 1,
-            title: getLang('Football Betting'),
+            title: getLang('Lottery Online'),
             image: img3,
             coming: true
         }

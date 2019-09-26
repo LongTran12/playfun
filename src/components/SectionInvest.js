@@ -4,9 +4,9 @@ import styled from 'styled-components'
 import BlockHeading from './BlockHeading'
 import { MyContext } from '../contexts/SiteContext'
 import imgBackgr from '../assets/images/home-bg.png'
-import img1 from '../assets/images/item-invest1.png'
-import img2 from '../assets/images/item-invest2.png'
-import img3 from '../assets/images/item-invest1.png'
+import img1 from '../assets/images/erc20w.png'
+import img2 from '../assets/images/trons.fund.png'
+import img3 from '../assets/images/loanp2p.png'
 import BlockInvest from './BlockInvest'
 
 export default function SectionInvest() {
@@ -14,13 +14,13 @@ export default function SectionInvest() {
     const data = [
         {
             id: 1,
-            title: getLang('Investment'),
+            title: getLang('Buster.fund'),
             image: img1,
 
         },
         {
             id: 1,
-            title: getLang('Trust Contract'),
+            title: getLang('Trons.fund'),
             image: img2,
             hot: true
 

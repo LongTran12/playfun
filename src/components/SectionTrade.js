@@ -3,9 +3,9 @@ import { Row, Col } from 'antd'
 import styled from 'styled-components'
 import BlockHeading from './BlockHeading'
 import { MyContext } from '../contexts/SiteContext'
-import img1 from '../assets/images/trade-1.png'
-import img2 from '../assets/images/trade-2.png'
-import img3 from '../assets/images/trade-3.png'
+import img1 from '../assets/images/otc_exchange.png'
+import img2 from '../assets/images/dex.png'
+import img3 from '../assets/images/aitrading.png'
 import BlockInvest from './BlockInvest'
 
 export default function SectionGame() {
@@ -13,20 +13,20 @@ export default function SectionGame() {
     const data = [
         {
             id: 1,
-            title: getLang('Grid Trading'),
+            title: getLang('OTC Exchange'),
             image: img1,
             hot: true,
         },
         {
             id: 1,
-            title: getLang('Coin Exchange'),
+            title: getLang('DECENTRALIZED ExChange'),
             image: img2,
             coming: true
 
         },
         {
             id: 1,
-            title: getLang('OTC Trade'),
+            title: getLang('AI Trading'),
             image: img3,
             coming: true
         }

@@ -89,7 +89,7 @@ export default function Header() {
                                                 <li><a href="#1">{getLang('Loan Contract')} </a><span>{getLang('Coming Soon')}</span></li>
                                             </ul>
                                         </li>
-                                        <li className="li-child">
+                                        {/* <li className="li-child">
                                             <button>{getLang('DAPPS')} <FaCaretDown /></button>
                                             <ul>
                                                 <li><a href="#1">{getLang('Lottery')}</a></li>
@@ -104,9 +104,10 @@ export default function Header() {
                                                 <li><a href="#1">{getLang('Coin Exchange')}</a><span>{getLang('Coming Soon')}</span></li>
                                                 <li><a href="#1">{getLang('OTC Trade')} </a><span>{getLang('Coming Soon')}</span></li>
                                             </ul>
-                                        </li>
-                                        <li><NavLink activeClassName="active" to="/er">{getLang('Referral')}</NavLink></li>
-                                        <li className="li-child">
+                                        </li> */}
+                                        <li><NavLink activeClassName="active" to="/referral">{getLang('Referral')}</NavLink></li>
+                                        <li><NavLink activeClassName="active" to="/coming-soon">{getLang('Coming Soon')}</NavLink></li>
+                                        {/* <li className="li-child">
                                             <button>{getLang('About')} <FaCaretDown /></button>
                                             <ul>
                                                 <li><a href="#1">{getLang('Help')}</a></li>
@@ -114,7 +115,7 @@ export default function Header() {
                                                 <li><a href="#1">{getLang('Rules')}</a></li>
                                                 <li><a href="#1">{getLang('About Us')}</a></li>
                                             </ul>
-                                        </li>
+                                        </li> */}
                                     </ul>
                                     <div className="menu-content__share">
                                         <a href="#1" >

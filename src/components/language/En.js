@@ -26,5 +26,12 @@ export default {
     'Coming Soon': 'Coming Soon',
     'Rules': 'Rules',
     'DAPPS': 'DAPPS',
-
+    'Number Lucky ERC20BUSTER': 'Number Lucky ERC20BUSTER',
+    'Number Lucky Tronbuster': 'Number Lucky Tronbuster',
+    'Lottery Online': 'Lottery Online',
+    'Buster.fund': 'Buster.fund',
+    'Trons.fund': 'Trons.fund',
+    'OTC Exchange': 'OTC Exchange',
+    'DECENTRALIZED ExChange': 'DECENTRALIZED Exchange',
+    'AI Trading': 'AI Trading'
 }

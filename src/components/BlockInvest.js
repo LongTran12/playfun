@@ -22,6 +22,8 @@ const Wrap = styled.div`
     position: relative;
     padding-bottom:60px;
     .hot-image{
+        border-radius:10px;
+        overflow:hidden;
         .hot{
             position: absolute;
             top:0;
