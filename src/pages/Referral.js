@@ -1,7 +1,7 @@
 import React from 'react'
 import { Row, Col } from 'antd'
 import styled from 'styled-components'
-import img from '../assets/images/referral.png'
+import img from '../assets/images/img.jpg'
 
 export default function Referral() {
     return (

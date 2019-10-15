@@ -3,9 +3,9 @@ import { Row, Col } from 'antd'
 import styled from 'styled-components'
 import BlockHeading from './BlockHeading'
 import { MyContext } from '../contexts/SiteContext'
-import img1 from '../assets/images/lucky-dice.png'
-import img2 from '../assets/images/lucky-ring.png'
-import img3 from '../assets/images/lucky-moon.png'
+import img1 from '../assets/images/lucky-dice.jpg'
+import img2 from '../assets/images/lucky-ring.jpg'
+import img3 from '../assets/images/lucky-moon.jpg'
 import BlockInvest from './BlockInvest'
 
 export default function SectionGameStore() {
@@ -59,7 +59,7 @@ export default function SectionGameStore() {
     )
 }
 const Wrap = styled.div`
-    background-color:#1a1a3d;
+    background-color: #0a0a28;
     padding:100px 0;
     overflow:hidden;
 `;

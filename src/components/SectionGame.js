@@ -15,20 +15,22 @@ export default function SectionGame() {
             id: 1,
             title: getLang('USE ETH'),
             image: img1,
-            hot: true
+            hot: true,
+            href: 'https://eth.etherlucky.io'
         },
         {
             id: 2,
             title: getLang('USE ERC20 TOKEN'),
             image: img2,
-            hot: true
-
+            hot: true,
+            href: 'https://erc20.etherlucky.io'
         },
         {
             id: 3,
             title: getLang('USE OTE TOKEN'),
             image: img3,
-            coming: true
+            coming: true,
+            href: 'https://ote.etherlucky.io'
         }
     ]
     return (
@@ -59,7 +61,7 @@ export default function SectionGame() {
     )
 }
 const Wrap = styled.div`
-     background-color: #0a0a28;
+    background-color: #0a0a28;
     padding:100px 0;
     overflow:hidden;
 `;

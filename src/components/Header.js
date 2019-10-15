@@ -77,11 +77,11 @@ export default function Header() {
 
                                     <ul className="menu-content__menu">
                                         <li><NavLink activeClassName="active" to="/">{getLang('Home')}</NavLink></li>
-                                        <li><NavLink activeClassName="active" to="/dr">{getLang('Dapps')}</NavLink></li>
+                                        {/* <li><NavLink activeClassName="active" to="/dr">{getLang('Dapps')}</NavLink></li> */}
                                         <li><NavLink activeClassName="active" to="/referral">{getLang('Referral')}</NavLink></li>
                                         <li><NavLink activeClassName="active" to="/coming-soon">{getLang('About')}</NavLink></li>
                                     </ul>
-                                    <div className="menu-content__share">
+                                    {/* <div className="menu-content__share">
                                         <a href="#1" >
                                             <img src={img1} alt="" className="image" width="42px" height="42px" />
                                             <img src={img1_color} alt="" className="image color" width="42px" height="42px" />
@@ -91,7 +91,7 @@ export default function Header() {
                                             <img src={img2} alt="" className="image" width="42px" height="42px" />
                                             <img src={img2_color} alt="" className="image color" width="42px" height="42px" />
                                         </a>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </Col>
                         </Row>

@@ -23,7 +23,7 @@ function Wrap() {
                 <Route exact path="/" component={App} />
                 <Route exact path="/referral" component={Referral} />
                 <Route exact path="/coming-soon" component={ComingSoon} />
-                <SectionBrand />
+                {/* <SectionBrand /> */}
                 <Footer />
 
             </Router>

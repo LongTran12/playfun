@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import BlockHeading from './BlockHeading'
 import { MyContext } from '../contexts/SiteContext'
 import img1 from '../assets/images/game1.jpg'
-import img2 from '../assets/images/trc10.png'
+import img2 from '../assets/images/trc10.jpg'
 import img3 from '../assets/images/game4.jpg'
 import BlockInvest from './BlockInvest'
 
