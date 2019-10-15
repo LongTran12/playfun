@@ -12,7 +12,6 @@ import './assets/css/style.scss';
 import { SiteContext } from './contexts/SiteContext'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import Referral from './pages/Referral'
-import ComingSoon from './pages/ComingSoon'
 
 function Wrap() {
     return (
@@ -20,8 +19,7 @@ function Wrap() {
             <Router>
                 <Header />
                 <Route exact path="/" component={App} />
-                <Route exact path="/referral" component={Referral} />
-                <Route exact path="/coming-soon" component={ComingSoon} />
+                <Route exact path="/about" component={Referral} />
                 {/* <SectionBrand /> */}
                 <Footer />
 

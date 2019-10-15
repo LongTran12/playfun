@@ -78,8 +78,8 @@ export default function Header() {
                                     <ul className="menu-content__menu">
                                         <li><NavLink activeClassName="active" to="/">{getLang('Home')}</NavLink></li>
                                         {/* <li><NavLink activeClassName="active" to="/dr">{getLang('Dapps')}</NavLink></li> */}
-                                        <li><NavLink activeClassName="active" to="/referral">{getLang('Referral')}</NavLink></li>
-                                        <li><NavLink activeClassName="active" to="/coming-soon">{getLang('About')}</NavLink></li>
+                                        <li><NavLink activeClassName="active" to="/about">{getLang('About')}</NavLink></li>
+                                        {/* <li><NavLink activeClassName="active" to="/coming-soon">{getLang('About')}</NavLink></li> */}
                                     </ul>
                                     {/* <div className="menu-content__share">
                                         <a href="#1" >
