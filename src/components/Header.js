@@ -12,7 +12,7 @@ import img2 from '../assets/images/send.png'
 import img2_color from '../assets/images/send_color.png'
 import img_qrcode from '../assets/images/image_qrcode.jpg'
 import backLine from '../assets/images/nav-line.png'
-import { FaCaretDown, FaAlignLeft } from 'react-icons/fa'
+import { FaAlignLeft } from 'react-icons/fa'
 
 export default function Header() {
     const [isOpen, setisOpen] = useState(false);
@@ -37,7 +37,7 @@ export default function Header() {
                             sm={{ span: 4, offset: 0 }}
                             xs={{ span: 6, offset: 0 }}
                         >
-                            <NavLink to="/"><img src={logo} alt="logo" width="100%" /></NavLink>
+                            <NavLink to="/"><img src={logo} alt="logo" width="100px" /></NavLink>
                         </Col>
 
                         <Col
@@ -61,12 +61,7 @@ export default function Header() {
                                                 English
                                             </button>
                                         </li>
-                                        <li>
-                                            <button onClick={() => setlang('vi')}>
-                                                <img src={langVn} alt="us" width={20} height={20} />
-                                                VietNam
-                                            </button>
-                                        </li>
+
                                     </ul>
 
                                 </div>
@@ -79,43 +74,12 @@ export default function Header() {
                                 <div className={`menu-content ${isMobile === true ? 'is-mobile' : 'is-desktop'} `}>
                                     <button className="button-mobile" onClick={() => setisMobile(!isMobile)}><FaAlignLeft /></button>
                                     <div className="wrap-mobile-close" onClick={() => setisMobile(false)} />
+
                                     <ul className="menu-content__menu">
                                         <li><NavLink activeClassName="active" to="/">{getLang('Home')}</NavLink></li>
-                                        <li className="li-child">
-                                            <button>{getLang('Invest')} <FaCaretDown /></button>
-                                            <ul>
-                                                <li><a href="#1">{getLang('Trust Contract')}</a></li>
-                                                <li><a href="#1">{getLang('Investment')}</a></li>
-                                                <li><a href="#1">{getLang('Loan Contract')} </a><span>{getLang('Coming Soon')}</span></li>
-                                            </ul>
-                                        </li>
-                                        {/* <li className="li-child">
-                                            <button>{getLang('DAPPS')} <FaCaretDown /></button>
-                                            <ul>
-                                                <li><a href="#1">{getLang('Lottery')}</a></li>
-                                                <li><a href="#1">{getLang('Dice')}</a><span>{getLang('Coming Soon')}</span></li>
-                                                <li><a href="#1">{getLang('Football Betting')} </a><span>{getLang('Coming Soon')}</span></li>
-                                            </ul>
-                                        </li>
-                                        <li className="li-child">
-                                            <button>{getLang('Trade')} <FaCaretDown /></button>
-                                            <ul>
-                                                <li><a href="#1">{getLang('Grid Trading')}</a></li>
-                                                <li><a href="#1">{getLang('Coin Exchange')}</a><span>{getLang('Coming Soon')}</span></li>
-                                                <li><a href="#1">{getLang('OTC Trade')} </a><span>{getLang('Coming Soon')}</span></li>
-                                            </ul>
-                                        </li> */}
+                                        <li><NavLink activeClassName="active" to="/dr">{getLang('Dapps')}</NavLink></li>
                                         <li><NavLink activeClassName="active" to="/referral">{getLang('Referral')}</NavLink></li>
-                                        <li><NavLink activeClassName="active" to="/coming-soon">{getLang('Coming Soon')}</NavLink></li>
-                                        {/* <li className="li-child">
-                                            <button>{getLang('About')} <FaCaretDown /></button>
-                                            <ul>
-                                                <li><a href="#1">{getLang('Help')}</a></li>
-                                                <li><a href="#1">{getLang('Download APP')}</a></li>
-                                                <li><a href="#1">{getLang('Rules')}</a></li>
-                                                <li><a href="#1">{getLang('About Us')}</a></li>
-                                            </ul>
-                                        </li> */}
+                                        <li><NavLink activeClassName="active" to="/coming-soon">{getLang('About')}</NavLink></li>
                                     </ul>
                                     <div className="menu-content__share">
                                         <a href="#1" >

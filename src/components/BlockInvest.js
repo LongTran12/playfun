@@ -40,5 +40,8 @@ const Wrap = styled.div`
         transform:translateY(-10px);
         transition:transform 0.5s ease;
         text-decoration:none;
+        a{
+            text-decoration:none;
+        }
     }
 `;

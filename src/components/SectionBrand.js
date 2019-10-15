@@ -2,8 +2,6 @@ import React, { useContext } from 'react'
 import styled from 'styled-components'
 import imgBack from '../assets/images/backgr-brand.png'
 import { MyContext } from '../contexts/SiteContext'
-import img4 from '../assets/images/brand-4.png'
-import img5 from '../assets/images/brand-5.png'
 import img6 from '../assets/images/brand1.png'
 import img7 from '../assets/images/brand2.png'
 import img8 from '../assets/images/brand3.png'
@@ -31,7 +29,7 @@ export default function SectionBrand() {
                         {dataBrand.map((index, i) =>
                             <p key={i}>
                                 <a href={index.href}>
-                                    <img src={index.img} alt={index.brand} width="250px" />
+                                    <img src={index.img} alt={index.brand} width="250px" height="130px" />
                                 </a>
                             </p>
                         )}
@@ -60,19 +58,6 @@ const dataBrand = [
         img: img8,
         brand: 'pearl ventures',
         href: "#2"
-    },
-    {
-        id: 3,
-        img: img4,
-        href: "#2",
-        brand: 'golden gate investments'
-    },
-    {
-        id: 4,
-        img: img5,
-        brand: 'king ventures',
-        href: "#2"
-
     },
 ]
 const Wrap = styled.div`

@@ -3,9 +3,9 @@ import { Row, Col } from 'antd'
 import styled from 'styled-components'
 import BlockHeading from './BlockHeading'
 import { MyContext } from '../contexts/SiteContext'
-import img1 from '../assets/images/erc20buster.png'
-import img2 from '../assets/images/tronbuster.png'
-import img3 from '../assets/images/lottery.png'
+import img1 from '../assets/images/game2.jpg'
+import img2 from '../assets/images/game3.jpg'
+import img3 from '../assets/images/game4.jpg'
 import BlockInvest from './BlockInvest'
 
 export default function SectionGame() {
@@ -13,20 +13,20 @@ export default function SectionGame() {
     const data = [
         {
             id: 1,
-            title: getLang('Number Lucky ERC20BUSTER'),
+            title: getLang('USE ETH'),
             image: img1,
             hot: true
         },
         {
-            id: 1,
-            title: getLang('Number Lucky Tronbuster'),
+            id: 2,
+            title: getLang('USE ERC20 TOKEN'),
             image: img2,
-            coming: true
+            hot: true
 
         },
         {
-            id: 1,
-            title: getLang('Lottery Online'),
+            id: 3,
+            title: getLang('USE OTE TOKEN'),
             image: img3,
             coming: true
         }
@@ -43,7 +43,7 @@ export default function SectionGame() {
                     xs={{ span: 22, offset: 1 }}
                     className="text-center"
                 >
-                    <BlockHeading title={getLang('Game')} />
+                    <BlockHeading title={getLang('titleGame')} />
                     <Row gutter={40} type="flex" justify="center">
                         {data.map((index, i) =>
                             <Col xxl={8} xl={8} lg={12} md={12} sm={12} xs={24} key={i}>
@@ -59,7 +59,7 @@ export default function SectionGame() {
     )
 }
 const Wrap = styled.div`
-    background-color:#1a1a3d;
+     background-color: #0a0a28;
     padding:100px 0;
     overflow:hidden;
 `;

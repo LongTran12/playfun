@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { MyContext } from '../contexts/SiteContext';
 import { Row, Col } from 'antd'
 import { FaPlay } from 'react-icons/fa'
-import imgVideo from '../assets/images/video-img.png'
+import imgVideo from '../assets/images/game1.jpg'
 import line from '../assets/images/news_line.png'
 import Modal from '../components/Modal'
 
@@ -22,8 +22,8 @@ export default function SectionVideo() {
                     xs={{ span: 22, offset: 1 }}
                 >
                     <div className="wrap-video text-center">
-                        <h5 style={{ color: "#fff", marginBottom: 15 }}>{getLang('PLAYFUN aims to create global ecological chain of operation system and build an ecosphere with multi million users.')}</h5>
-                        <p>{getLang('The PLAYFUN platform is headquartered in Singapore and has offices in the United States, South Korea, Japan, and the Philippines. The founding members of the platform come from the technical departments of well-known international enterprises such as Qualcomm, Google, IBM, etc. It is an international founding team with strong strength and experience in technology, project experience, commercial and financial investment fields, etc, which wins the favor of international capital markets.')}</p>
+                        <h5 style={{ color: "#fff", marginBottom: 15 }}>{getLang('homeTitle')}</h5>
+                        <p>{getLang('videoDescription')}</p>
                         <div className="video-box">
                             <img src={imgVideo} alt="video background" width="100%" />
                             <button onClick={() => setisOpen(!isOpen)}><FaPlay /></button>
@@ -31,7 +31,7 @@ export default function SectionVideo() {
                         </div>
                         {isOpen && <Modal onClose={() => setisOpen(false)}>
                             <div className="video">
-                                <iframe width="1080px" height="607px" src="https://www.youtube.com/embed/WkmeUp8QQyI" frameBorder="0" title="video"></iframe>
+                                <iframe width="1080px" height="607px" src="https://www.youtube.com/embed/lFaJWArxdw0" frameBorder="0" title="video"></iframe>
                             </div>
                         </Modal>
                         }

@@ -16,8 +16,8 @@ const Wrap = styled.div`
     margin-bottom:30px;
     position: relative;
     background-image:url(${props => props.bold ? img2 : img});
-    width: 314px;
-    height: 59px;
+    width:auto;
+    max-width:720px;
     font-size: 20px;
     line-height: 59px;
     font-weight: 600;
@@ -27,6 +27,7 @@ const Wrap = styled.div`
     text-align: center;
     margin-bottom: 40px;
     z-index: 5;
+    
     img{
         position:absolute;
         top:0;

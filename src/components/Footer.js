@@ -21,7 +21,7 @@ function Footer() {
                 >
                     <Row className="row-footer" type="flex" justify="center" align="middle">
                         <Col xxl={4} xl={4} lg={4} md={4} sm={4} xs={6}>
-                            <img src={logo} alt="" width="100%" />
+                            <img src={logo} alt="" width="80px" />
                         </Col>
                         <Col xxl={{ span: 11, offset: 9 }}
                             xl={{ span: 11, offset: 9 }}
@@ -42,7 +42,7 @@ function Footer() {
                     </Row>
                     <Row>
                         <Col>
-                            <p>{getLang('The games provided by PLAYFUN are based on blockchain, fair and transparent. When you start playing these games,please note that online gambling and lottery is an entertainment vehicle and that it carries with it a certain degree of financial risk. Players should be aware of this risk, and govern themselves accordingly.')}</p>
+                            <p>{getLang('textFooter')}</p>
                         </Col>
                     </Row>
                 </Col>
@@ -68,8 +68,10 @@ const Wrap = styled.div`
                 list-style:none;
                 display:flex;
                 justify-content:flex-end;
-                flex-flow:row wrap;
                 padding-left:0;
+                max-width:556px;
+                justify-content:space-between;
+                margin:0 auto;
                 li{
                     padding:0 25px;
                     margin-bottom:5px;
@@ -89,13 +91,7 @@ const Wrap = styled.div`
             margin-bottom:20px;
             .social{
                 margin-top:40px;
-                ul{
-                    justify-content:center;
-                    padding-left:0;
-                    li{
-                        margin-bottom:30px;
-                    }
-                }
+               
             }
         }
     }
