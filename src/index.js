@@ -10,7 +10,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 import './assets/css/style.scss';
 import { SiteContext } from './contexts/SiteContext'
-import SectionBrand from './components/SectionBrand'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import Referral from './pages/Referral'
 import ComingSoon from './pages/ComingSoon'

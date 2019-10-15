@@ -6,7 +6,7 @@ import img from '../assets/images/img.jpg'
 export default function Referral() {
     return (
         <Wrap>
-            <Row>
+            <Row type="flex" justify="center">
                 <Col xxl={{ span: 16, offset: 4 }}
                     xl={{ span: 22, offset: 1 }}
                     lg={{ span: 22, offset: 1 }}
@@ -23,4 +23,8 @@ export default function Referral() {
 const Wrap = styled.div`
     padding:100px 0;
     overflow:hidden;
+    img{
+        max-width:1024px;
+        margin:0 auto;
+    }
 `;

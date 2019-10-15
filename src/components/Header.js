@@ -6,11 +6,6 @@ import langUs from '../assets/images/lang-us.png'
 import langVn from '../assets/images/lang-vn.png'
 import { MyContext } from '../contexts/SiteContext'
 import { NavLink } from 'react-router-dom'
-import img1 from '../assets/images/qrcode.png'
-import img1_color from '../assets/images/qrcode_color.png'
-import img2 from '../assets/images/send.png'
-import img2_color from '../assets/images/send_color.png'
-import img_qrcode from '../assets/images/image_qrcode.jpg'
 import backLine from '../assets/images/nav-line.png'
 import { FaAlignLeft } from 'react-icons/fa'
 
@@ -61,7 +56,12 @@ export default function Header() {
                                                 English
                                             </button>
                                         </li>
-
+                                        <li>
+                                            <button onClick={() => setlang('vi')}>
+                                                <img src={langVn} alt="us" width={20} height={20} />
+                                                VietNam
+                                            </button>
+                                        </li>
                                     </ul>
 
                                 </div>

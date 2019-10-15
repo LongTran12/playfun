@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import { Row, Col } from 'antd';
 import styled from 'styled-components'
 import logo from '../assets/images/logo.png'
-import { FaYoutube, FaBook, FaCommentDots, FaTwitter, FaWeibo, FaLocationArrow, FaFacebookF } from 'react-icons/fa'
+import { FaYoutube, FaBook, FaFacebookF } from 'react-icons/fa'
 import { MyContext } from '../contexts/SiteContext';
 
 
@@ -69,8 +69,6 @@ const Wrap = styled.div`
                 display:flex;
                 justify-content:flex-end;
                 padding-left:0;
-                max-width:556px;
-                justify-content:space-between;
                 margin:0 auto;
                 li{
                     padding:0 25px;
@@ -79,6 +77,11 @@ const Wrap = styled.div`
                         svg{
                             font-size:28px;
                             color:#777;
+                        }
+                        :hover{
+                            svg{
+                                color:#fff;
+                            }
                         }
                     }
                 }
