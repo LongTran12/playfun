@@ -35,7 +35,7 @@ export default {
     'DECENTRALIZED ExChange': 'DECENTRALIZED Exchange',
     'AI Trading': 'AI Trading',
     'homeTitle': 'The ETHERLUCKY Based on Smart Contract platform, ETHERLUCKY is the first flatform integrate DAPP GAME included Digital Lottery which is officially launched in October.',
-    'videoDescription': 'ETHERLUCKY eated a financial game named LUCKY NUMBER , LUCKY  RING, LUCKY DICE AND LUCKY MOON which is blockchain smartcontract ERC20 on TRUSTWALLET based game and it allows users not just entertianing but also making some money without stress. Using blockchain technology discover how to architect and develop private permissioned blockchain networks for the enterprise to handle business-to-business transactions while maintaining security, privacy confidentiality and decentralized entertainment providers with visibillity, fairness also optimal customer experience.',
+    'videoDescription': 'ETHERLUCKY eated a financial game named LUCKY NUMBER , LUCKY DICE , LUCKY  RING AND LUCKY MOON which is blockchain smartcontract ERC20 on TRUSTWALLET based game and it allows users not just entertianing but also making some money without stress. Using blockchain technology discover how to architect and develop private permissioned blockchain networks for the enterprise to handle business-to-business transactions while maintaining security, privacy confidentiality and decentralized entertainment providers with visibillity, fairness also optimal customer experience.',
     'titleGame': 'GAME DAPP LUCKY NUMBER  ON TRUSTWALLET',
     'USE OTE TOKEN': 'USE OTE TOKEN',
     'USE ERC20 TOKEN': 'USE ERC20 TOKEN',

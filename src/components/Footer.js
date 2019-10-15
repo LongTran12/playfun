@@ -29,13 +29,13 @@ function Footer() {
                             md={24} sm={24} xs={24}>
                             <div className="social">
                                 <ul>
-                                    <li><a href="#1"><FaYoutube /></a></li>
-                                    <li><a href="#1"><FaBook /></a></li>
-                                    <li><a href="#1"><FaCommentDots /></a></li>
+                                    <li><a href="https://www.youtube.com/channel/UC__i7MUVUePTtBOCJu_zVVw"><FaYoutube /></a></li>
+                                    <li><a href="https://t.me/clbgamedapplucky"><FaBook /></a></li>
+                                    {/* <li><a href="#1"><FaCommentDots /></a></li>
                                     <li><a href="#1"><FaTwitter /></a></li>
                                     <li><a href="#1"><FaWeibo /></a></li>
-                                    <li><a href="#1"><FaLocationArrow /></a></li>
-                                    <li><a href="#1"><FaFacebookF /></a></li>
+                                    <li><a href="#1"><FaLocationArrow /></a></li> */}
+                                    <li><a href='https://www.facebook.com/OTFund-102027677883008/'><FaFacebookF /></a></li>
                                 </ul>
                             </div>
                         </Col>
