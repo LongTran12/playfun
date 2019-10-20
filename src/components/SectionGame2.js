@@ -15,20 +15,23 @@ export default function SectionGame2() {
             id: 1,
             title: getLang('USE TRX'),
             image: img1,
-            hot: true
+            hot: true,
+            href: 'https://trx.tronlucky.io'
         },
         {
             id: 2,
             title: getLang('USE TRC10/20 TOKEN'),
             image: img2,
-            hot: true
+            hot: true,
+            href: 'https://trc10.tronlucky.io'
 
         },
         {
             id: 3,
             title: getLang('USE OTT TOKEN'),
             image: img3,
-            coming: true
+            coming: true,
+            href: 'https://ote.tronlucky.io'
         }
     ]
     return (
@@ -59,7 +62,7 @@ export default function SectionGame2() {
     )
 }
 const Wrap = styled.div`
-    background-color:#1a1a3d;
+    background-color: #0a0a28;
     padding:100px 0;
     overflow:hidden;
 `;

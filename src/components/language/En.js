@@ -34,8 +34,8 @@ export default {
     'OTC Exchange': 'OTC Exchange',
     'DECENTRALIZED ExChange': 'DECENTRALIZED Exchange',
     'AI Trading': 'AI Trading',
-    'homeTitle': 'The ETHERLUCKY Based on Smart Contract platform, ETHERLUCKY is the first flatform integrate DAPP GAME included Digital Lottery which is officially launched in October.',
-    'videoDescription': 'ETHERLUCKY eated a financial game named LUCKY NUMBER , LUCKY DICE , LUCKY  RING AND LUCKY MOON which is blockchain smartcontract ERC20 on TRUSTWALLET based game and it allows users not just entertianing but also making some money without stress. Using blockchain technology discover how to architect and develop private permissioned blockchain networks for the enterprise to handle business-to-business transactions while maintaining security, privacy confidentiality and decentralized entertainment providers with visibillity, fairness also optimal customer experience.',
+    'homeTitle': 'The TRONLUCKY Based on Smart Contract platform, TRONLUCKY is the first flatform integrate DAPP GAME included Digital Lottery which is officially launched in October.',
+    'videoDescription': 'TRONLUCKY created a financial game named LUCKY NUMBER , LUCKY DICE, LUCKY RING, AND LUCKY MOON which is blockchain smartcontract TRC10/20 on TRONWALLET based game and it aids participants not merely entertain after having a tiring day time but also as well increase their particular income in an easy approach.',
     'titleGame': 'GAME DAPP LUCKY NUMBER  ON TRUSTWALLET',
     'USE OTE TOKEN': 'USE OTE TOKEN',
     'USE ERC20 TOKEN': 'USE ERC20 TOKEN',
@@ -48,6 +48,6 @@ export default {
     'LUCKY DICE': 'LUCKY DICE',
     'LUCKY RING': 'LUCKY RING',
     'LUCKY MOON': 'LUCKY MOON',
-    'textFooter': 'The games provided by ETHERLUCKY are based on blockchain smartcontract ERC20, fair and transparent.Security, privacy confidentiality and decentralized entertainment providers with visibillity, fairness also optimal customer experience.',
+    'textFooter': 'The games provided by TRONLUCKY are based on blockchain smartcontract TRC10/20, fair and transparent. Security, privacy confidentiality and decentralized entertainment providers with visibillity, fairness also optimal customer experience.',
     'Dapps': 'Dapps'
 }
