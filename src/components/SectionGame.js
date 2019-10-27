@@ -3,9 +3,13 @@ import { Row, Col } from 'antd'
 import styled from 'styled-components'
 import BlockHeading from './BlockHeading'
 import { MyContext } from '../contexts/SiteContext'
-import img1 from '../assets/images/game2.jpg'
-import img2 from '../assets/images/game3.jpg'
-import img3 from '../assets/images/game4.jpg'
+import bnb from '../assets/images/gamebnb.jpg'
+import dab from '../assets/images/gamedab.jpg'
+import lina from '../assets/images/gamelina.jpg'
+import eth from '../assets/images/gameeth.jpg'
+import spin from '../assets/images/gamespin.jpg'
+import usdt from '../assets/images/gameusdt.jpg'
+
 import BlockInvest from './BlockInvest'
 
 export default function SectionGame() {
@@ -14,21 +18,42 @@ export default function SectionGame() {
         {
             id: 1,
             title: getLang('USE ETH'),
-            image: img1,
+            image: eth,
             hot: true,
             href: 'https://eth.etherlucky.io'
         },
         {
             id: 2,
-            title: getLang('USE ERC20 TOKEN'),
-            image: img2,
+            title: getLang('USE DAB TOKEN'),
+            image: dab,
             hot: true,
-            href: 'https://erc20.etherlucky.io'
+            href: 'https://dab.etherlucky.io'
         },
         {
             id: 3,
-            title: getLang('USE OTE TOKEN'),
-            image: img3,
+            title: getLang('USE LINA TOKEN'),
+            image: lina,
+            hot: true,
+            href: 'https://lina.etherlucky.io'
+        },
+        {
+            id: 4,
+            title: getLang('USE SPIN TOKEN'),
+            image: spin,
+            hot: true,
+            href: 'https://spin.etherlucky.io'
+        },
+        {
+            id: 5,
+            title: getLang('USE BNB TOKEN'),
+            image: bnb,
+            coming: true,
+            href: 'https://bnb.etherlucky.io'
+        },
+        {
+            id: 6,
+            title: getLang('USE USDT TOKEN'),
+            image: usdt,
             coming: true,
             href: 'https://ote.etherlucky.io'
         }

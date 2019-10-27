@@ -3,9 +3,9 @@ import { Row, Col } from 'antd'
 import styled from 'styled-components'
 import BlockHeading from './BlockHeading'
 import { MyContext } from '../contexts/SiteContext'
-import img1 from '../assets/images/game1.jpg'
-import img2 from '../assets/images/trc10.jpg'
-import img3 from '../assets/images/game4.jpg'
+import trx from '../assets/images/gametrx.jpg'
+import trc from '../assets/images/gametrc.jpg'
+import otf from '../assets/images/gameotf.jpg'
 import BlockInvest from './BlockInvest'
 
 export default function SectionGame2() {
@@ -14,20 +14,20 @@ export default function SectionGame2() {
         {
             id: 1,
             title: getLang('USE TRX'),
-            image: img1,
+            image: trx,
             hot: true
         },
         {
             id: 2,
             title: getLang('USE TRC10/20 TOKEN'),
-            image: img2,
-            hot: true
+            image: trc,
+            coming: true
 
         },
         {
             id: 3,
-            title: getLang('USE OTT TOKEN'),
-            image: img3,
+            title: getLang('USE OTF TOKEN'),
+            image: otf,
             coming: true
         }
     ]
