@@ -15,20 +15,22 @@ export default function SectionGame2() {
             id: 1,
             title: getLang('USE TRX'),
             image: trx,
-            hot: true
+            hot: true,
+            href: 'https://trx.tronlucky.io'
         },
         {
             id: 2,
             title: getLang('USE TRC10/20 TOKEN'),
             image: trc,
-            coming: true
-
+            coming: true,
+            href: 'https://trc.tronlucky.io'
         },
         {
             id: 3,
             title: getLang('USE OTF TOKEN'),
             image: otf,
-            coming: true
+            coming: true,
+            href: 'https://otf.tronlucky.io'
         }
     ]
     return (
