@@ -21,8 +21,8 @@ function App() {
     return (
         <>
             <SectionVideo />
-            <SectionGame />
             <SectionGame2 />
+            <SectionGame />
             <SectionGameStore />
             <Cert />
             {/* <Modal
