@@ -3,13 +3,9 @@ import { Row, Col } from 'antd'
 import styled from 'styled-components'
 import BlockHeading from './BlockHeading'
 import { MyContext } from '../contexts/SiteContext'
-import bnb from '../assets/images/gamebnb.jpg'
-import dab from '../assets/images/gamedab.jpg'
-import lina from '../assets/images/gamelina.jpg'
-import eth from '../assets/images/gameeth.jpg'
-import spin from '../assets/images/gamespin.jpg'
-import usdt from '../assets/images/gameusdt.jpg'
-
+import B1 from '../assets/images/B2LUCK.png'
+import B2 from '../assets/images/B2CASINO.jpg'
+import B3 from '../assets/images/B2GO.png'
 import BlockInvest from './BlockInvest'
 
 export default function SectionGame() {
@@ -17,45 +13,20 @@ export default function SectionGame() {
     const data = [
         {
             id: 1,
-            title: getLang('USE ETH'),
-            image: eth,
-            hot: true,
-            href: 'https://eth.etherlucky.io'
+            title: getLang('USE A'),
+            image: B1
         },
         {
             id: 2,
-            title: getLang('USE DAB TOKEN'),
-            image: dab,
-            hot: true,
-            href: 'https://dab.etherlucky.io'
+            title: getLang('USE A'),
+            image: B2,
+            hot: true
         },
         {
             id: 3,
-            title: getLang('USE LINA TOKEN'),
-            image: lina,
-            hot: true,
-            href: 'https://lina.etherlucky.io'
-        },
-        {
-            id: 4,
-            title: getLang('USE SPIN TOKEN'),
-            image: spin,
-            hot: true,
-            href: 'https://spin.etherlucky.io'
-        },
-        {
-            id: 5,
-            title: getLang('USE BNB TOKEN'),
-            image: bnb,
-            coming: true,
-            href: 'https://bnb.etherlucky.io'
-        },
-        {
-            id: 6,
-            title: getLang('USE USDT TOKEN'),
-            image: usdt,
-            coming: true,
-            href: 'https://ote.etherlucky.io'
+            title: getLang('USE '),
+            image: B3,
+            hot: true
         }
     ]
     return (

@@ -3,9 +3,9 @@ import { Row, Col } from 'antd'
 import styled from 'styled-components'
 import BlockHeading from './BlockHeading'
 import { MyContext } from '../contexts/SiteContext'
-import B1 from '../assets/images/B1ERC20.jpg'
-import B2 from '../assets/images/B1TRC20.jpg'
-import B3 from '../assets/images/B1STACK.png'
+import B1 from '../assets/images/res1.jpg'
+import B2 from '../assets/images/res2.jpg'
+import B3 from '../assets/images/res3.jpg'
 import BlockInvest from './BlockInvest'
 
 export default function SectionGame2() {
@@ -13,24 +13,21 @@ export default function SectionGame2() {
     const data = [
         {
             id: 1,
-            title: getLang('USE ERC20'),
+            title: getLang('USE '),
             image: B1,
-            hot: true,
-            href: 'https://ethers.fund'
+            hot: true
         },
         {
             id: 2,
-            title: getLang('USE 20 TOKEN'),
+            title: getLang('USE 2'),
             image: B2,
-            coming: true,
-            href: 'https://trons.fund'
+            coming: true
         },
         {
             id: 3,
-            title: getLang('STACKING CONTRACT'),
+            title: getLang('STACKING'),
             image: B3,
-            coming: true,
-            href: 'https://ote.fund'
+            coming: true
         }
     ]
     return (
@@ -45,7 +42,7 @@ export default function SectionGame2() {
                     xs={{ span: 22, offset: 1 }}
                     className="text-center"
                 >
-                    <BlockHeading title={getLang('titleGame2')} />
+                    <BlockHeading title={getLang('titleRes')} />
                     <Row gutter={40} type="flex" justify="center">
                         {data.map((index, i) =>
                             <Col xxl={8} xl={8} lg={12} md={12} sm={12} xs={24} key={i}>
