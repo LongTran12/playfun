@@ -3,7 +3,7 @@ import { Row, Col } from 'antd'
 import styled from 'styled-components'
 import BlockHeading from './BlockHeading'
 import { MyContext } from '../contexts/SiteContext'
-import bnb from '../assets/images/gamebnb.jpg'
+import ote from '../assets/images/ote.jpg'
 import dab from '../assets/images/gamedab.jpg'
 import lina from '../assets/images/gamelina.jpg'
 import eth from '../assets/images/gameeth.jpg'
@@ -17,24 +17,24 @@ export default function SectionGame() {
     const data = [
         {
             id: 1,
+            title: getLang('USE OTE'),
+            image: ote,
+            hot: true,
+            href: 'https://ote.etherlucky.io'
+        },
+        {
+            id: 2,
             title: getLang('USE ETH'),
             image: eth,
             hot: true,
             href: 'https://eth.etherlucky.io'
         },
         {
-            id: 2,
+            id: 3,
             title: getLang('USE DAB TOKEN'),
             image: dab,
             hot: true,
             href: 'https://dab.etherlucky.io'
-        },
-        {
-            id: 3,
-            title: getLang('USE LINA TOKEN'),
-            image: lina,
-            hot: true,
-            href: 'https://lina.etherlucky.io'
         },
         {
             id: 4,
@@ -45,10 +45,10 @@ export default function SectionGame() {
         },
         {
             id: 5,
-            title: getLang('USE BNB TOKEN'),
-            image: bnb,
-            coming: true,
-            href: 'https://bnb.etherlucky.io'
+            title: getLang('USE LINA TOKEN'),
+            image: lina,
+            hot: true,
+            href: 'https://lina.etherlucky.io'
         },
         {
             id: 6,
