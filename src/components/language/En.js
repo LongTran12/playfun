@@ -60,5 +60,5 @@ export default {
     'titleEco': 'Ecosystem',
     'titleHotel': 'Hotel',
     'titleRes': 'Restaurants',
-    'titleCoffe': 'Coffe',
+    'titleCoffe': 'Coffee',
 }

@@ -14,19 +14,21 @@ export default function SectionGame() {
         {
             id: 1,
             title: getLang('USE A'),
-            image: B1
+            image: B1,
+            hot: true,
+            href: './#dapps'
         },
         {
             id: 2,
             title: getLang('USE A'),
             image: B2,
-            hot: true
+            coming: true
         },
         {
             id: 3,
             title: getLang('USE '),
             image: B3,
-            hot: true
+            coming: true
         }
     ]
     return (

@@ -10,6 +10,7 @@ import Cert from './pages/Referral'
 import Coffe from './components/Coffe'
 import Hotel from './components/Hotel'
 import Res from './components/Res'
+import Dapps from './components/Dapps'
 import { Modal, Input, Icon } from 'antd'
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
             <Hotel />
             {/* <SectionGameStore /> */}
             <Cert />
+            <Dapps />
             {/* <Modal
                 title="Promotion"
                 visible={promo}

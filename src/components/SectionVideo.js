@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { MyContext } from '../contexts/SiteContext';
 import { Row, Col } from 'antd'
 import { FaPlay } from 'react-icons/fa'
-import imgVideo from '../assets/images/game1.jpg'
+import imgVideo from '../assets/images/imgvideo.jpg'
 import line from '../assets/images/news_line.png'
 import Modal from '../components/Modal'
 
@@ -31,7 +31,7 @@ export default function SectionVideo() {
                         </div>
                         {isOpen && <Modal onClose={() => setisOpen(false)}>
                             <div className="video">
-                                <iframe width="1080px" height="607px" src="https://www.youtube.com/embed/lFaJWArxdw0" frameBorder="0" title="video"></iframe>
+                                <iframe width="1080px" height="607px" src="https://www.youtube.com/embed/BQhzM0j3jH0" frameBorder="0" title="video"></iframe>
                             </div>
                         </Modal>
                         }
