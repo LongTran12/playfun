@@ -9,7 +9,9 @@ import lina from '../assets/images/gamelina.jpg'
 import eth from '../assets/images/gameeth.jpg'
 import spin from '../assets/images/gamespin.jpg'
 import usdt from '../assets/images/gameusdt.jpg'
-
+import bnb from '../assets/images/gamebnb.jpg'
+import eos from '../assets/images/gameeos.jpg'
+import erc20 from '../assets/images/gameerc20.jpg'
 import BlockInvest from './BlockInvest'
 
 export default function SectionGame() {
@@ -37,13 +39,6 @@ export default function SectionGame() {
             href: 'https://dab.etherlucky.io'
         },
         {
-            id: 4,
-            title: getLang('USE SPIN TOKEN'),
-            image: spin,
-            hot: true,
-            href: 'https://spin.etherlucky.io'
-        },
-        {
             id: 5,
             title: getLang('USE LINA TOKEN'),
             image: lina,
@@ -51,11 +46,42 @@ export default function SectionGame() {
             href: 'https://lina.etherlucky.io'
         },
         {
+            id: 4,
+            title: getLang('USE SPIN TOKEN'),
+            image: spin,
+            hot: true,
+            href: 'https://spin.etherlucky.io'
+        },
+        {
+            id: 6,
+            title: getLang('USE BNB TOKEN'),
+            image: bnb,
+            coming: true,
+            href: '#'
+        },
+        ,
+        {
             id: 6,
             title: getLang('USE USDT TOKEN'),
             image: usdt,
             coming: true,
-            href: 'https://ote.etherlucky.io'
+            href: '#'
+        },
+        ,
+        {
+            id: 6,
+            title: getLang('USE EOS TOKEN'),
+            image: eos,
+            coming: true,
+            href: '#'
+        },
+        ,
+        {
+            id: 6,
+            title: getLang('USE ERC20 TOKEN'),
+            image: erc20,
+            coming: true,
+            href: 'erc20'
         }
     ]
     return (
