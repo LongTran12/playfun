@@ -84,9 +84,8 @@ export default function Header() {
                                         <li className="li-child">
                                             <button>{getLang('Help')} <FaAngleDown /></button>
                                             <ul>
-                                                <li><a href="#1">{getLang('Download APP')}</a></li>
-                                                <li><a href="#1">{getLang('Rules')}</a></li>
-                                                <li><a href="#1">{getLang('About Us')}</a></li>
+                                                <li><a href="https://drive.google.com/open?id=1l0BxBMr8QQbEMgxw_88oZS05kEJNX3fU">{getLang('WhitePaper')}</a></li>
+                                                <li><a href="https://drive.google.com/open?id=1H8W5cHq2AXt9OeLkhjWdnVA9mc8_raeu">{getLang('Social Media')}</a></li>
                                             </ul>
                                         </li>
                                     </ul>
