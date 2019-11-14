@@ -10,5 +10,6 @@ export default {
     "USE TRX": 'SỬ DỤNG TRX',
     'USE TRC10/20 TOKEN': 'SỬ DỤNG TRC10/20 TOKEN',
     'USE OTT TOKEN': 'SỬ DỤNG OTT TOKEN',
-    'textFooter': 'Những trò chơi được đưa ra thị trường bởi ETHERLUCKY đều xây dựng trên nền tảng blockchain SmartContract ERC20, trung thực và cực kỳ minh bạch.Đảm bảo an toàn, bảo mật tuyệt đối cùng với các dịch vụ giải trí phi tập trung. Chứa đựng trong đó là sự minh bạch,đảm bảo sự công bằng và tối ưu hóa trải nghiệm của người dùng.'
+    'textFooter': 'Những trò chơi được đưa ra thị trường bởi ETHERLUCKY đều xây dựng trên nền tảng blockchain SmartContract ERC20, trung thực và cực kỳ minh bạch.Đảm bảo an toàn, bảo mật tuyệt đối cùng với các dịch vụ giải trí phi tập trung. Chứa đựng trong đó là sự minh bạch,đảm bảo sự công bằng và tối ưu hóa trải nghiệm của người dùng.',
+    'FaqIntro': 'Giới thiệu về Nền tảng'
 }

@@ -7,7 +7,7 @@ import langVn from '../assets/images/lang-vn.png'
 import { MyContext } from '../contexts/SiteContext'
 import { NavLink } from 'react-router-dom'
 import backLine from '../assets/images/nav-line.png'
-import { FaAlignLeft } from 'react-icons/fa'
+import { FaAlignLeft, FaAngleDown } from 'react-icons/fa'
 
 export default function Header() {
     const [isOpen, setisOpen] = useState(false);
@@ -80,6 +80,15 @@ export default function Header() {
                                         {/* <li><NavLink activeClassName="active" to="/dr">{getLang('Dapps')}</NavLink></li> */}
                                         <li><NavLink activeClassName="active" to="/about">{getLang('About')}</NavLink></li>
                                         <li><a href="https://ethers.fund">Invester</a></li>
+                                        <li><NavLink activeClassName="active" to="/faq">{getLang('Faq')}</NavLink></li>
+                                        <li className="li-child">
+                                            <button>{getLang('Help')} <FaAngleDown /></button>
+                                            <ul>
+                                                <li><a href="#1">{getLang('Download APP')}</a></li>
+                                                <li><a href="#1">{getLang('Rules')}</a></li>
+                                                <li><a href="#1">{getLang('About Us')}</a></li>
+                                            </ul>
+                                        </li>
                                     </ul>
                                     {/* <div className="menu-content__share">
                                         <a href="#1" >

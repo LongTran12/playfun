@@ -12,6 +12,7 @@ import './assets/css/style.scss';
 import { SiteContext } from './contexts/SiteContext'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import Referral from './pages/Referral'
+import Faq from './pages/Faq';
 
 function Wrap() {
     return (
@@ -20,6 +21,7 @@ function Wrap() {
                 <Header />
                 <Route exact path="/" component={App} />
                 <Route exact path="/about" component={Referral} />
+                <Route exact path="/faq" component={Faq} />
                 {/* <SectionBrand /> */}
                 <Footer />
 

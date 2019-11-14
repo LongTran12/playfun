@@ -56,5 +56,7 @@ export default {
     'LUCKY RING': 'LUCKY RING',
     'LUCKY MOON': 'LUCKY MOON',
     'textFooter': 'The games provided by ETHERLUCKY are based on blockchain smartcontract ERC20, fair and transparent.Security, privacy confidentiality and decentralized entertainment providers with visibillity, fairness also optimal customer experience.',
-    'Dapps': 'Dapps'
+    'Dapps': 'Dapps',
+    'Faq': 'Faq',
+    'FaqIntroduce': 'Introduce about DABANKING Platform'
 }
