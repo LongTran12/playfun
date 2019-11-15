@@ -80,7 +80,7 @@ export default function Header() {
                                         {/* <li><NavLink activeClassName="active" to="/dr">{getLang('Dapps')}</NavLink></li> */}
                                         <li><NavLink activeClassName="active" to="/about">{getLang('About')}</NavLink></li>
                                         <li><a href="https://ethers.fund">Invester</a></li>
-                                        <li><NavLink activeClassName="active" to="/faq">{getLang('Faq')}</NavLink></li>
+                                        <li><NavLink activeClassName="active" to="/faq">{getLang('FAQ')}</NavLink></li>
                                         <li className="li-child">
                                             <button>{getLang('Help')} <FaAngleDown /></button>
                                             <ul>
