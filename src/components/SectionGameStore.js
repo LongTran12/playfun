@@ -59,7 +59,7 @@ export default function SectionGameStore() {
     )
 }
 const Wrap = styled.div`
-    background-color: #0a0a28;
+    background-color: transparent;
     padding:100px 0;
     overflow:hidden;
 `;

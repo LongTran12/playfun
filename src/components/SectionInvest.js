@@ -61,7 +61,7 @@ export default function SectionInvest() {
     )
 }
 const Wrap = styled.div`
-    background-color: #0a0a28;
+    background-color: transparent;
     overflow:hidden;
     @media (max-width:768px){
         .imback{

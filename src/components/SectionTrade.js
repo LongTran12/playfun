@@ -59,7 +59,7 @@ export default function SectionGame() {
     )
 }
 const Wrap = styled.div`
-   background-color:#0e0e30;
+   background-color:transparent;
     padding:100px 0 0;
     overflow:hidden;
 `;

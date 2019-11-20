@@ -67,7 +67,7 @@ const Wrap = styled.div`
     overflow:hidden;
     ::before{
         content:'';
-        background-color:rgba(14, 14, 48, 1);
+        background-color:transparent;
         position: absolute;
         top:0;
         left: 0;

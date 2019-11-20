@@ -13,7 +13,7 @@ const FaqBlock = ({ id, text }) => {
 
 export default FaqBlock
 const Wrap = styled.div`
-    background-color:#0a0a28;
+    background-color:transparent;
     padding:10px 15px;
 `
 const WrapP = styled.p`

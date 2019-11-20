@@ -51,7 +51,7 @@ function Footer() {
     )
 }
 const Wrap = styled.div`
-    background-color: #0a0a28;
+    background-color: transparent;
     color:#777;
     overflow:hidden;
     padding-bottom:15px;

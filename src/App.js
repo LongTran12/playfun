@@ -8,6 +8,7 @@ import SectionGameStore from './components/SectionGameStore'
 import Cert from './pages/Referral'
 import { Modal, Input, Icon } from 'antd'
 
+
 function App() {
     const [promo, setPromo] = useState(true)
     const [email, setEmail] = useState('')
@@ -20,6 +21,7 @@ function App() {
 
     return (
         <>
+            
             <SectionVideo />
             <SectionGame />
             <SectionGame2 />

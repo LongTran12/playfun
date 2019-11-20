@@ -92,7 +92,7 @@ const GuideBody = memo(styled.div`
     justify-content: space-between;
 `)
 const ExtensionBlock = memo(styled.div`
-    background-color: #1e193c;
+    background-color: transparent;
     box-shadow: 3px 3px 20px 5px rgba(18,17,32,0.3);
     width: 47%;
     padding: 2em;

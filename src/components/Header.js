@@ -184,7 +184,7 @@ const Wrap = styled.div`
             }
             :before{
                 content:'';
-                background-image:url(${backLine});
+                /* background-image:url(${backLine}); */
                 top:0;
                 left:0;
                 background-size:100% 100%;

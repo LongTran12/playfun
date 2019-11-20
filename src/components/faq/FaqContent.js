@@ -13,7 +13,7 @@ const FaqContent = ({ textContent }) => {
 
 export default FaqContent
 const Wrap = styled.div`
-    background-color:rgba(10, 10, 39, 0.4);
+    background-color:transparent;
     border-radius:0 0 15px 15px;
     padding:25px 30px;
 `
