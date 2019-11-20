@@ -15,42 +15,42 @@ import erc20 from '../assets/images/gameerc20.jpg'
 import BlockInvest from './BlockInvest'
 
 export default function SectionGame() {
-    const { getLang } = useContext(MyContext)
+    const { getLang, ref } = useContext(MyContext)
     const data = [
         {
             id: 1,
             title: getLang('USE OTE'),
             image: ote,
             hot: true,
-            href: 'https://ote.etherlucky.io'
+            href: 'https://ote.etherlucky.io/?ref=' + ref
         },
         {
             id: 2,
             title: getLang('USE ETH'),
             image: eth,
             hot: true,
-            href: 'https://eth.etherlucky.io'
+            href: 'https://eth.etherlucky.io/?ref=' + ref
         },
         {
             id: 3,
             title: getLang('USE DAB TOKEN'),
             image: dab,
             hot: true,
-            href: 'https://dab.etherlucky.io'
+            href: 'https://dab.etherlucky.io/?ref=' + ref
         },
         {
             id: 5,
             title: getLang('USE LINA TOKEN'),
             image: lina,
             hot: true,
-            href: 'https://lina.etherlucky.io'
+            href: 'https://lina.etherlucky.io/?ref=' + ref
         },
         {
             id: 4,
             title: getLang('USE SPIN TOKEN'),
             image: spin,
             hot: true,
-            href: 'https://spin.etherlucky.io'
+            href: 'https://spin.etherlucky.io/?ref=' + ref
         },
         {
             id: 6,
