@@ -31,7 +31,7 @@ export default function SectionVideo() {
                         </div>
                         {isOpen && <Modal onClose={() => setisOpen(false)}>
                             <div className="video">
-                                <iframe width="1080px" height="607px" src="https://www.youtube.com/embed/BQhzM0j3jH0" frameBorder="0" title="video"></iframe>
+                                <iframe width="1080px" height="607px" src="https://www.youtube.com/embed/E2cfkQMxaMk" frameBorder="0" title="video"></iframe>
                             </div>
                         </Modal>
                         }
