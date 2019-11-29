@@ -22,35 +22,35 @@ export default function SectionGame() {
             title: getLang('USE OTE'),
             image: ote,
             hot: true,
-            href: 'https://ote.etherlucky.io/?ref=' + ref
+            href: 'https://ote.erc20buster.com/?ref=' + ref
         },
         {
             id: 2,
             title: getLang('USE ETH'),
             image: eth,
             hot: true,
-            href: 'https://eth.etherlucky.io/?ref=' + ref
+            href: 'https://eth.erc20buster.com/?ref=' + ref
         },
         {
             id: 3,
             title: getLang('USE DAB TOKEN'),
             image: dab,
             hot: true,
-            href: 'https://dab.etherlucky.io/?ref=' + ref
+            href: 'https://dab.erc20buster.com/?ref=' + ref
         },
         {
             id: 5,
             title: getLang('USE LINA TOKEN'),
             image: lina,
             hot: true,
-            href: 'https://lina.etherlucky.io/?ref=' + ref
+            href: 'https://lina.erc20buster.com/?ref=' + ref
         },
         {
             id: 4,
             title: getLang('USE SPIN TOKEN'),
             image: spin,
             hot: true,
-            href: 'https://spin.etherlucky.io/?ref=' + ref
+            href: 'https://spin.erc20buster.com/?ref=' + ref
         },
         {
             id: 6,
