@@ -9,7 +9,7 @@ export default function SectionGame2() {
         <Wrap id='dapps'>
             <Row>
                 <Col xxl={12} xl={12} lg={12} md={12} sm={12} xs={24} style={{ textAlign: 'center' }}>
-                    <a href={'https://etherlucky.io'}><img src={ether} style={{ width: '80%' }} /></a>
+                    <a href={'https://erc20buster.com/'}><img src={ether} style={{ width: '80%' }} /></a>
                 </Col>
                 <Col xxl={12} xl={12} lg={12} md={12} sm={12} xs={24} style={{ textAlign: 'center' }}>
                     <a href={'https://tronlucky.io'}><img src={tron} style={{ maxWidth: '80%' }} /></a>
