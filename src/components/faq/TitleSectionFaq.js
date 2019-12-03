@@ -13,7 +13,8 @@ const TitleSectionFaq = ({ text }) => {
 
 export default TitleSectionFaq
 const Wrap = styled.p`
-    font-size:1em;
+    font-size:1.3em;
+    font-weight:bold;
     text-transform:uppercase;
     color:#fff;
 `

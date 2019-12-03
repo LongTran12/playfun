@@ -2,7 +2,6 @@ import React from 'react'
 import FaqContainer from '../components/faq/FaqContainer'
 import styled from 'styled-components'
 import { Row, Col } from 'antd'
-import FaqContainer2 from '../components/faq/FaqContainer2'
 
 const Faq = () => {
     return (
@@ -17,9 +16,6 @@ const Faq = () => {
                 >
                     <WrapSection>
                         <FaqContainer />
-                    </WrapSection>
-                    <WrapSection>
-                        <FaqContainer2 />
                     </WrapSection>
 
                 </Col>

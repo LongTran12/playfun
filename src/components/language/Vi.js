@@ -2,8 +2,16 @@ export default {
     'hello': 'hello',
     'Home': 'Trang chủ',
     'Referral': 'Giới Thiệu',
-    'homeTitle': 'ETHERLUCKY được xây dựng trên nền tảng Smart Contract, ETHERLUCKY là đơn vị đầu tiên tích hợp DAPP GAME gồm có Digital Lottery chính thức được ra mắt vào tháng 10.',
-    'videoDescription': 'ETHERLUCKY  tạo ra các trò chơi tài chính như LUCKY NUMBER, LUCKY DICE, LUCKY RING và LUCKYMOONtrên nền tảng blockchain SmartContract ERC20 trong TRUSTWALLET  và trò chơi này không những giúp người chơi có thời gian thư giãn sau một ngày làm việc mệt mõi mà bạn còn có thể thêm thu nhập nhờ trò chơi này.Công nghệ blockchain khám phá ra cách xây dựng và phát triển một hệ thống blockchain độc lập, mạnh mẽ, kín đáo tuyệt đối cho những giao dịch kinh doanh đồng thời hỗ trợ thúc đẩy tính trung thực, an toàn, bảo mật và công bằng cho người dùng lẫn người tham gia trò chơi LUCKY NUMBER.',
+    'homeTitle': `Game Lucky được xây dựng trên nền tảng blockchain Smart Contract, Game
+    Lucky là đơn vị đầu tiên tích hợp DApp GAME gồm có Digital Lottery, Digital
+    Trading chính thức được ra mắt vào tháng 10.`,
+    'videoDescription': `Game Lucky tạo ra các trò chơi tài chính như LUCKY NUMBER, LUCKY DICE, LUCKY
+    RING và LUCKYMOON trên nền tảng blockchain SmartContract ERC20 trong
+    TRUSTWALLET xây dựng các trò chơi tài chính. Các trò chơi trên không những giúp
+    người chơi có thời gian thư giãn sau một ngày làm việc mệt mõi mà còn là cách
+    kiếm thêm thu nhập.
+    Việc sử dụng công nghệ Blockchain hỗ trợ thúc đẩy tính minh bạch, an toàn, bảo
+    mật và công bằng cho người dùng lẫn người tham gia trò chơi.`,
     'USE ETH': 'SỬ DỤNG ETH',
     'USE ERC20 TOKEN': 'SỬ DỤNG ERC20 TOKEN',
     'USE OTE TOKEN': 'SỬ DỤNG OTE TOKEN',

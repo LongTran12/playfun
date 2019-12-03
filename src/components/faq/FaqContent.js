@@ -2,11 +2,12 @@ import React, { useContext } from 'react'
 import styled from 'styled-components'
 import { MyContext } from '../../contexts/SiteContext'
 
-const FaqContent = ({ textContent }) => {
+const FaqContent = ({ textContent, children }) => {
     const { getLang } = useContext(MyContext)
     return (
         <Wrap>
             <ElementP>{getLang(textContent)}</ElementP>
+            <ElementP>{getLang(children)}</ElementP>
         </Wrap>
     )
 }
