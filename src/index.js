@@ -12,11 +12,37 @@ import './assets/css/style.scss';
 import { SiteContext } from './contexts/SiteContext'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import Referral from './pages/Referral'
-
+import Particles from 'react-particles-js'
 function Wrap() {
     return (
         <SiteContext>
             <Router>
+                <div style={{
+                    position: 'fixed',
+                    width: '100vw',
+                    height: '100vh',
+                    backgroundColor: 'black'
+                }}>
+                    <Particles
+                        params={{
+                            "particles": {
+                                "number": {
+                                    "value": 50
+                                },
+                                "size": {
+                                    "value": 3
+                                }
+                            },
+                            "interactivity": {
+                                "events": {
+                                    "onhover": {
+                                        "enable": true,
+                                        "mode": "repulse"
+                                    }
+                                }
+                            }
+                        }} />
+                </div>
                 <Header />
                 <Route exact path="/" component={App} />
                 <Route exact path="/about" component={Referral} />
