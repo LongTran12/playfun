@@ -34,8 +34,15 @@ export default {
     'OTC Exchange': 'OTC Exchange',
     'DECENTRALIZED ExChange': 'DECENTRALIZED Exchange',
     'AI Trading': 'AI Trading',
-    'homeTitle': 'OTFUND is created a blockchain-based platform. We are also the first platform integrates DApp Game.',
-    'videoDescription': 'The OTFUND platform is headquartered in United States and has offices in Singapore, South Korea, Japan and Philippines. The founding members come from the technical departments of well-known enterprises such as SamSung, Dell, Oracle, Google, Amazon, etc… With experiences in technology and financial investment field, etc….',
+    'homeTitle': `OTFUND created a blockchain-based platform. OTFUND token
+    open-end fund is also the first platform integrates Dapp Game
+    includes Digital Lottery and Digital Trading which is officially
+    launched in October.`,
+    'videoDescription': `Using blockchain technology discovery how to architect and
+    develop private permissioned blockchain networks for
+    maintaining security, privacy, fairness also optimal customer
+    experience. With the mission of creating global ecosystem and
+    building an ecological floor with millions of users.`,
     'titleGame': 'GAME',
     'USE OTE TOKEN': 'USE OTE TOKEN',
     'USE ERC20 TOKEN': 'USE ERC20 TOKEN',
@@ -61,4 +68,5 @@ export default {
     'titleHotel': 'Hotel',
     'titleRes': 'Restaurants',
     'titleCoffe': 'Coffee',
+
 }

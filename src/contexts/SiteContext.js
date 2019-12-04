@@ -11,11 +11,13 @@ function SiteContext({ children }) {
                 if (Vi[txt]) {
                     return Vi[txt];
                 }
-                else {
-                    return En[txt];
-                }
+
             default:
-                return En[txt];
+                if (En[txt]) {
+                    return En[txt];
+                } else {
+                    return txt;
+                }
         }
     }
     return (
