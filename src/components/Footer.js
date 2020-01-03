@@ -23,15 +23,16 @@ function Footer() {
                         <Col xxl={2} xl={2} lg={2} md={4} sm={4} xs={6}>
                             <img src={logo} alt="" width="80px" />
                         </Col>
-                        <Col xxl={11} xl={11} lg={11} md={11} sm={11} xs={18}>
+                        <Col xxl={22} xl={22} lg={22} md={20} sm={20} xs={18}>
                             <div>
                                 {getLang('OPEN TOKEN FUND')}
                             </div>
                             <div>
-                                {getLang('')}
+                                <p>{getLang('textFooter')}</p>
+                                <p>{getLang('textCopyright')}</p>
                             </div>
                         </Col>
-                        <Col xxl={{ span: 11, }}
+                        {/* <Col xxl={{ span: 11, }}
                             xl={{ span: 11, }}
                             lg={{ span: 11, }}
                             md={9} sm={9} xs={24}>
@@ -39,19 +40,14 @@ function Footer() {
                                 <ul>
                                     <li><a href="https://www.youtube.com/channel/UC__i7MUVUePTtBOCJu_zVVw"><FaYoutube /></a></li>
                                     <li><a href="https://t.me/clbgamedapplucky"><FaBook /></a></li>
-                                    {/* <li><a href="#1"><FaCommentDots /></a></li>
-                                    <li><a href="#1"><FaTwitter /></a></li>
-                                    <li><a href="#1"><FaWeibo /></a></li>
-                                    <li><a href="#1"><FaLocationArrow /></a></li> */}
                                     <li><a href='https://www.facebook.com/OTFund-102027677883008/'><FaFacebookF /></a></li>
                                 </ul>
                             </div>
-                        </Col>
+                        </Col> */}
                     </Row>
                     <Row>
                         <Col>
-                            <p>{getLang('textFooter')}</p>
-                            <p>{getLang('textCopyright')}</p>
+                            {/* <p>{getLang('textFooter')}</p> */}
                         </Col>
                     </Row>
                 </Col>

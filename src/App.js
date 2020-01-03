@@ -32,8 +32,8 @@ function App() {
             <SectionTrade />
             <SectionEco />
             <Coffe />
-            <Res />
-            <Hotel />
+            {/* <Res /> */}
+            {/* <Hotel /> */}
             <SectionPartner />
             {/* <SectionGameStore /> */}
             <Cert />

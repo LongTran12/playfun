@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react'
+import React, { useState, useContext, useEffect } from 'react'
 import { Row, Col } from 'antd'
 import styled from 'styled-components'
 import logo from '../assets/images/logo.png'
@@ -13,8 +13,22 @@ export default function Header() {
     const [isOpen, setisOpen] = useState(false);
     const { lang, setlang, getLang } = useContext(MyContext);
     const [isMobile, setisMobile] = useState(false);
+    useEffect(() => {
+        const header = document.getElementById("header-sticky");
+        const sticky = header.offsetTop;
+        const scrollCallBack = window.addEventListener("scroll", () => {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        });
+        return () => {
+            window.removeEventListener("scroll", scrollCallBack);
+        };
+    }, []);
     return (
-        <Wrap>
+        <Wrap id='header-sticky'>
             <Row>
                 <Col xxl={{ span: 16, offset: 4 }}
                     xl={{ span: 20, offset: 2 }}
@@ -114,6 +128,11 @@ export default function Header() {
 const Wrap = styled.div`
     padding:15px 0 0;
     background:#0a0a27;
+     &.sticky{
+        position: fixed;
+        z-index: 999;
+        width: 100%;
+     }
     .tab-right-header{
         .language{
             position:relative;

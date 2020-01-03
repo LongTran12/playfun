@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import BlockHeading from './BlockHeading'
 import { MyContext } from '../contexts/SiteContext'
 import B1 from '../assets/images/B1ERC20.jpg'
-import B2 from '../assets/images/B1TRC20.jpg'
+import B2 from '../assets/images/usdi2.jpg'
 import B3 from '../assets/images/B1STACK.png'
 import BlockInvest from './BlockInvest'
 

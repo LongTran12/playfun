@@ -3,9 +3,9 @@ import { Row, Col } from 'antd'
 import styled from 'styled-components'
 import BlockHeading from './BlockHeading'
 import { MyContext } from '../contexts/SiteContext'
-import B1 from '../assets/images/coffe1.jpg'
-import B2 from '../assets/images/coffe2.jpg'
-import B3 from '../assets/images/coffe3.jpg'
+import B1 from '../assets/images/coffe3.jpg'
+import B2 from '../assets/images/res3.jpg'
+import B3 from '../assets/images/hotel2.jpg'
 import BlockInvest from './BlockInvest'
 
 export default function SectionGame2() {
@@ -15,19 +15,24 @@ export default function SectionGame2() {
             id: 1,
             title: getLang('USE USDI'),
             image: B1,
-            hot: true
+            hot: true,
+            subTitle: "Coffee"
         },
         {
             id: 2,
             title: getLang('USE USDI'),
             image: B2,
-            coming: true
+            coming: true,
+            subTitle: "Restaurant"
+
         },
         {
             id: 3,
             title: getLang('USE USDI'),
             image: B3,
-            coming: true
+            coming: true,
+            subTitle: "Hotels"
+
         }
     ]
     return (
@@ -42,7 +47,7 @@ export default function SectionGame2() {
                     xs={{ span: 22, offset: 1 }}
                     className="text-center"
                 >
-                    <BlockHeading title={getLang('titleCoffe')} />
+                    <BlockHeading title={getLang('SERVICE')} />
                     <Row gutter={40}>
                         {data.map((index, i) =>
                             <Col xxl={8} xl={8} lg={12} md={12} sm={12} xs={24} key={i}>

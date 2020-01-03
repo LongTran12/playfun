@@ -3,18 +3,21 @@ import styled from 'styled-components'
 import img1 from '../assets/images/Hot.png'
 import img2 from '../assets/images/coming.png'
 
-export default function BlockInvest({ href, image, title, hot, coming }) {
+export default function BlockInvest({ href, image, title, hot, coming, subTitle }) {
     return (
-        <Wrap>
-            <a href={href ? href : '#2'}>
-                <div className="hot-image">
-                    <img src={image} alt={title} width="100%" />
-                    {hot && <div className="hot"><img src={img1} alt="" /></div>}
-                    {coming && <div className="hot"><img src={img2} alt="" /></div>}
-                </div>
-                <h5>{title}</h5>
-            </a>
-        </Wrap>
+        <>
+            {subTitle && <SubTitle>{subTitle}</SubTitle>}
+            <Wrap>
+                <a href={href ? href : '#2'}>
+                    <div className="hot-image">
+                        <img src={image} alt={title} width="100%" />
+                        {hot && <div className="hot"><img src={img1} alt="" /></div>}
+                        {coming && <div className="hot"><img src={img2} alt="" /></div>}
+                    </div>
+                    <h5>{title}</h5>
+                </a>
+            </Wrap>
+        </>
     )
 }
 const Wrap = styled.div`
@@ -45,3 +48,7 @@ const Wrap = styled.div`
         }
     }
 `;
+const SubTitle = styled.h3`
+    color:#fff;
+    margin-bottom:1em;
+`
