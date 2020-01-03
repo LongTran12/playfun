@@ -13,23 +13,23 @@ export default function SectionGame2() {
     const data = [
         {
             id: 1,
-            title: getLang('USE ERC20'),
+            title: getLang('USE ERC20 TOKEN'),
             image: B1,
             hot: true,
             href: 'https://ethers.fund'
         },
         {
             id: 2,
-            title: getLang('USE 20 TOKEN'),
+            title: getLang('USE USDT'),
             image: B2,
-            coming: true,
+            hot: true,
             href: 'https://trons.fund'
         },
         {
             id: 3,
-            title: getLang('STACKING CONTRACT'),
+            title: getLang('USE OTE'),
             image: B3,
-            coming: true,
+            hot: true,
             href: 'https://ote.fund'
         }
     ]
@@ -46,7 +46,7 @@ export default function SectionGame2() {
                     className="text-center"
                 >
                     <BlockHeading title={getLang('titleGame2')} />
-                    <Row gutter={40} type="flex" justify="center">
+                    <Row gutter={40}>
                         {data.map((index, i) =>
                             <Col xxl={8} xl={8} lg={12} md={12} sm={12} xs={24} key={i}>
                                 <BlockInvest {...index} />

@@ -8,7 +8,7 @@ import line from '../assets/images/news_line.png'
 import Modal from '../components/Modal'
 
 export default function SectionVideo() {
-    const { getLang } = useContext(MyContext)
+    const { lang, getLang } = useContext(MyContext)
     const [isOpen, setisOpen] = useState(false)
     return (
         <Wrap>
@@ -31,7 +31,12 @@ export default function SectionVideo() {
                         </div>
                         {isOpen && <Modal onClose={() => setisOpen(false)}>
                             <div className="video">
-                                <iframe width="1080px" height="607px" src="https://www.youtube.com/embed/E2cfkQMxaMk" frameBorder="0" title="video"></iframe>
+                                {
+                                    lang === 'en' ? <iframe width="1080px" height="607px" src="https://www.youtube.com/embed/E2cfkQMxaMk" frameBorder="0" title="video"></iframe>
+                                        :
+                                        <iframe width="1080px" height="607px" src="https://www.youtube.com/embed/oCAVsC9ZNqc" frameBorder="0" title="video"></iframe>
+
+                                }
                             </div>
                         </Modal>
                         }

@@ -4,7 +4,7 @@ import Vi from '../components/language/Vi'
 const MyContext = createContext();
 
 function SiteContext({ children }) {
-    const [lang, setlang] = useState('en')
+    const [lang, setlang] = useState('vi')
     const getLang = (txt) => {
         switch (lang) {
             case 'vi':

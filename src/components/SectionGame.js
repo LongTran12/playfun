@@ -13,20 +13,20 @@ export default function SectionGame() {
     const data = [
         {
             id: 1,
-            title: getLang('USE A'),
+            title: getLang('ERC20 → USD'),
             image: B1,
             hot: true,
             href: './#dapps'
         },
         {
             id: 2,
-            title: getLang('USE A'),
+            title: getLang('USDI'),
             image: B2,
             coming: true
         },
         {
             id: 3,
-            title: getLang('USE '),
+            title: getLang('USDI'),
             image: B3,
             coming: true
         }
@@ -44,7 +44,7 @@ export default function SectionGame() {
                     className="text-center"
                 >
                     <BlockHeading title={getLang('titleGame')} />
-                    <Row gutter={40} type="flex" justify="center">
+                    <Row gutter={40}>
                         {data.map((index, i) =>
                             <Col xxl={8} xl={8} lg={12} md={12} sm={12} xs={24} key={i}>
                                 <BlockInvest {...index} />

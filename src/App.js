@@ -12,6 +12,7 @@ import Hotel from './components/Hotel'
 import Res from './components/Res'
 import Dapps from './components/Dapps'
 import { Modal, Input, Icon } from 'antd'
+import SectionPartner from './components/SectionPartner';
 
 function App() {
     const [promo, setPromo] = useState(true)
@@ -33,6 +34,7 @@ function App() {
             <Coffe />
             <Res />
             <Hotel />
+            <SectionPartner />
             {/* <SectionGameStore /> */}
             <Cert />
             <Dapps />

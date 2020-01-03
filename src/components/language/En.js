@@ -61,12 +61,15 @@ export default {
     'LUCKY DICE': 'LUCKY DICE',
     'LUCKY RING': 'LUCKY RING',
     'LUCKY MOON': 'LUCKY MOON',
-    'textFooter': '',
     'Dapps': 'Dapps',
     'titleTrade': 'Trade',
     'titleEco': 'Ecosystem',
     'titleHotel': 'Hotel',
     'titleRes': 'Restaurants',
     'titleCoffe': 'Coffee',
-
+    'titlePARTNER': 'PARTNER',
+    'textFooter': `OTFUND is authorised by the North America Cryptchain Limited Co,
+     a Domestic Limited Liability Company.North America Cryptchain Limited Co is incorporated in USA and has our registered office at  Apt 329, 5610 Glenridge Dr,
+       Sandyspring GA, 30342, USA.`,
+    'textCopyright': '© OTFUND 2019 All rights reserved. ‘OTFUND’ is a trademark of the North America Cryptchain Limited Co.'
 }

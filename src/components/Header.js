@@ -77,10 +77,12 @@ export default function Header() {
 
                                     <ul className="menu-content__menu">
                                         <li><NavLink activeClassName="active" to="/">{getLang('Home')}</NavLink></li>
+                                        <li><a href="https://ethers.fund">Invester</a></li>
                                         <li><a href="https://erc20buster.com/">Game Lucky</a></li>
+                                        <li><a href="#ecosystem">Ecosystem</a></li>
                                         {/* <li><NavLink activeClassName="active" to="/dr">{getLang('Dapps')}</NavLink></li> */}
                                         <li><NavLink activeClassName="active" to="/about">{getLang('About')}</NavLink></li>
-                                        <li><a href="https://ethers.fund">Invester</a></li>
+
                                         <li className="li-child">
                                             <button>{getLang('Help')} <FaAngleDown /></button>
                                             <ul>

@@ -20,13 +20,21 @@ function Footer() {
                     xs={{ span: 22, offset: 1 }}
                 >
                     <Row className="row-footer" type="flex" justify="center" align="middle">
-                        <Col xxl={4} xl={4} lg={4} md={4} sm={4} xs={6}>
+                        <Col xxl={2} xl={2} lg={2} md={4} sm={4} xs={6}>
                             <img src={logo} alt="" width="80px" />
                         </Col>
-                        <Col xxl={{ span: 11, offset: 9 }}
-                            xl={{ span: 11, offset: 9 }}
-                            lg={{ span: 13, offset: 7 }}
-                            md={24} sm={24} xs={24}>
+                        <Col xxl={11} xl={11} lg={11} md={11} sm={11} xs={18}>
+                            <div>
+                                {getLang('OPEN TOKEN FUND')}
+                            </div>
+                            <div>
+                                {getLang('')}
+                            </div>
+                        </Col>
+                        <Col xxl={{ span: 11, }}
+                            xl={{ span: 11, }}
+                            lg={{ span: 11, }}
+                            md={9} sm={9} xs={24}>
                             <div className="social">
                                 <ul>
                                     <li><a href="https://www.youtube.com/channel/UC__i7MUVUePTtBOCJu_zVVw"><FaYoutube /></a></li>
@@ -43,6 +51,7 @@ function Footer() {
                     <Row>
                         <Col>
                             <p>{getLang('textFooter')}</p>
+                            <p>{getLang('textCopyright')}</p>
                         </Col>
                     </Row>
                 </Col>
